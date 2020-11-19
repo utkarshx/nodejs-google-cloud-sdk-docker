@@ -1,5 +1,6 @@
 FROM node:current-slim
 RUN apt-get update && apt-get install -yqq jq python3 unzip curl git
+RUN npm install -g @angular/cli
 RUN curl https://dl.google.com/dl/cloudsdk/release/google-cloud-sdk.tar.gz > /tmp/google-cloud-sdk.tar.gz
 
 # Installing the package
