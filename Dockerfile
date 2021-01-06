@@ -1,4 +1,4 @@
-FROM node:current-slim
+FROM node:12-slim
 RUN apt-get update && apt-get install -yqq jq python3 unzip curl git
 RUN npm install -g @angular/cli
 RUN npm install -g firebase-tools --allow-root
